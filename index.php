@@ -1,11 +1,10 @@
 <?php
 require "controller/homeController.php";
 
-$pagina = isset($_GET['pagina'])?$_GET['pagina']:"index";
-
+$pagina = explode( '/', $_SERVER['REQUEST_URI']);
 $ctrl = new homeController();
 
-switch($pagina){
+switch($pagina[1]){
   case "index":
   $ctrl->index();
   break;
@@ -14,5 +13,8 @@ switch($pagina){
   break;
   case "painel":
   $ctrl->painel();
+  break;
+  default:
+  $ctrl->index();
   break;
 }

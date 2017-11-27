@@ -11,7 +11,7 @@
       <div class="row justify-content-lg-center">
         <div class="col-6">
           <h3>Login</h3>
-          <form id="login-form" action="./?pagina=painel" method="post" role="form" style="display: block;">
+          <form id="login-form" action="./painel" method="post" role="form" style="display: block;">
             <div class="form-group">
               <input type="text" name="username" id="username" class="form-control" placeholder="Username" value="">
             </div>

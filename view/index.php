@@ -12,7 +12,7 @@
     </div>
     <div class ="panel panel-default">
       <div class="panel-body">
-        <a href = "/?pagina=login">Login<a>
+        <a href = "/login">Login<a>
       </div>
     </div>
   </div>
