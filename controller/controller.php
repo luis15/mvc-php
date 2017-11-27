@@ -1,13 +1,12 @@
 <?php
 
 require "model/model.php";
-require "view/view.php";
 
 class Controller{
   public function index(){
     $model = new Model();
-    $view = new View();
+    $dados = $model->listarDados();
+    include "view/view.php";
 
-    $view->exibir($model->listarDados());
   }
 }
