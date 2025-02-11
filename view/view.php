@@ -15,7 +15,7 @@
     </div>
     <div class="panel panel-default">
       <div class="panel-body">
-        <h2>Dados:<?php echo $dados;?></h2>
+        <h2>Dados:<?php echo $dados?></h2>
       </div>
     </div>
   </div>

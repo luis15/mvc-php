@@ -3,6 +3,6 @@ class usuariomodel
 {
     public function usuarioLogado()
     {
-        return "Luis Antonio Coêlho";
+        return 'Luis Antonio Coêlho';
     }
 }

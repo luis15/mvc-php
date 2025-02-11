@@ -1,6 +1,6 @@
 <?php
 
-require "model/model.php";
+require 'model/model.php';
 
 class Controller
 {
@@ -8,7 +8,6 @@ class Controller
     {
         $model = new Model();
         $dados = $model->listarDados();
-        include "view/view.php";
-
+        include 'view/view.php';
     }
 }
