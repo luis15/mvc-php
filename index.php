@@ -1,20 +1,12 @@
-< ? php
-require "controller/homeController.php";
+<?php
+require 'controller/homeController.php';
 
 $pagina = explode('/', $_SERVER['REQUEST_URI']);
-$ctrl = new homeController();
+$ctrl   = new homeController();
 
-switch ($pagina[1]) {
-  case "index":
-    $ctrl - > index();
-    break;
-  case "login":
-    $ctrl - > login();
-    break;
-  case "painel":
-    $ctrl - > painel();
-    break;
-  default:
-    $ctrl - > index();
-    break;
-}
+match ($pagina[1]) {
+    'index' => $ctrl->index(),
+    'login' => $ctrl->login(),
+    'painel' => $ctrl->painel(),
+    default => $ctrl->index()
+};
